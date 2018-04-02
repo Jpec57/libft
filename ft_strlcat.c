@@ -13,7 +13,7 @@ unsigned int		my_strlen(char *s)
 	return (i);
 }
 
-size_t		ft_strlcat(char *dest, const char *src, size_t size)
+size_t				ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t i;
 	size_t j;

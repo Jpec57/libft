@@ -2,22 +2,22 @@
 
 t_list		*ft_lstnew(void const *content, size_t content_size)
 {
-	t_list *newEl;
+	t_list *new_el;
 
-	if ((newEl = malloc(sizeof(*newEl))) == NULL)
+	if ((new_el = malloc(sizeof(*new_el))) == NULL)
 		return (NULL);
 	if (content == NULL)
 	{
-		newEl->content = NULL;
-		newEl->content_size = 0;
+		new_el->content = NULL;
+		new_el->content_size = 0;
 	}
 	else
 	{
-		if ((newEl->content = malloc(content_size)) == NULL)
+		if ((new_el->content = malloc(content_size)) == NULL)
 			return (NULL);
-		newEl->content = ft_memcpy(newEl->content, content, content_size);
-		newEl->content_size = content_size;
+		new_el->content = ft_memcpy(new_el->content, content, content_size);
+		new_el->content_size = content_size;
 	}
-	newEl->next = NULL;
-	return (newEl);
+	new_el->next = NULL;
+	return (new_el);
 }

@@ -1,7 +1,9 @@
+#include "libft.h"
+
 char		*ft_strcat(char *dest, char *src)
 {
-	int k;
-	int j;
+	int		k;
+	int		j;
 
 	k = 0;
 	while (dest[k])

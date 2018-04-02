@@ -2,9 +2,9 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t size;
-	size_t k;
-	char *res;
+	size_t	size;
+	size_t	k;
+	char	*res;
 
 	k = 0;
 	if (!s || !f)

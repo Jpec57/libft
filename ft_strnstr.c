@@ -1,6 +1,6 @@
 #include "libft.h"
 
-static size_t			seek(int i, const char *str, const char *to_find, size_t s)
+static size_t	seek(int i, const char *str, const char *to_find, size_t s)
 {
 	size_t j;
 	size_t temp_i;
@@ -19,7 +19,6 @@ char			*ft_strnstr(const char *str, const char *to_find, size_t s)
 {
 	size_t	i;
 	char	*n;
-
 
 	n = NULL;
 	i = 0;

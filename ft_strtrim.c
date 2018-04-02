@@ -30,10 +30,10 @@ static int		ft_size_str(char const *s)
 
 char	*ft_strtrim(char const *s)
 {
-	int size;
-	char *res;
-	int k;
-	int i;
+	int		size;
+	char	*res;
+	int		k;
+	int		i;
 
 	k = 0;
 	i = 0;

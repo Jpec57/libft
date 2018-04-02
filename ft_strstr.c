@@ -20,7 +20,6 @@ char			*ft_strstr(const char *str, const char *to_find)
 	int		i;
 	char	*n;
 
-
 	n = NULL;
 	i = 0;
 	if (ft_strlen(to_find) == 0)

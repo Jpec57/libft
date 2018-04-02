@@ -2,10 +2,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *res;
-	int size;
-	int k;
-	int i;
+	char	*res;
+	int		size;
+	int		k;
+	int		i;
 
 	k = 0;
 	size = ft_strlen(s1) + ft_strlen(s2);

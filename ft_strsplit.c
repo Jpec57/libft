@@ -26,9 +26,9 @@ static int		size_word(char const *s, char c, int k)
 
 static int		count_word(char const *s, char c)
 {
-	int k;
-	int count;
-	int flag;
+	int		k;
+	int		count;
+	int		flag;
 
 	count = 0;
 	k = 0;
@@ -50,11 +50,11 @@ static int		count_word(char const *s, char c)
 	return (count);
 }
 
-static char	*word_filler(char const *s, char c, int *k)
+static char		*word_filler(char const *s, char c, int *k)
 {
-	char *word;
-	int s_word;
-	int i;
+	char	*word;
+	int		s_word;
+	int		i;
 
 	s_word = size_word(s, c, *k);
 	if ((word = malloc(sizeof(char) * (s_word + 1))) == NULL)
@@ -70,12 +70,12 @@ static char	*word_filler(char const *s, char c, int *k)
 	return (word);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
-	char **res;
-	int s_tab;
-	int i;
-	int k;
+	char	**res;
+	int		s_tab;
+	int		i;
+	int		k;
 
 	s_tab = count_word(s, c);
 	if ((res = malloc(sizeof(char*) * (s_tab + 1))) == NULL)

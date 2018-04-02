@@ -3,7 +3,7 @@
 void		ft_strdel(char **as)
 {
 	if (!as || !*as)
-	return ;
+		return ;
 	free(*as);
 	*as = NULL;
 }

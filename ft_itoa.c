@@ -2,7 +2,7 @@
 
 static int			size_nb(int n)
 {
-	int k;
+	int		k;
 
 	k = 0;
 	if (n < 0)
@@ -18,7 +18,7 @@ static int			size_nb(int n)
 	return (k);
 }
 
-static char		*special_cases(int n)
+static char			*special_cases(int n)
 {
 	char	*res;
 
@@ -29,11 +29,11 @@ static char		*special_cases(int n)
 	return (res);
 }
 
-char		*ft_itoa(int n)
+char				*ft_itoa(int n)
 {
-	char *res;
-	int size;
-	int k;
+	char	*res;
+	int		size;
+	int		k;
 
 	k = 0;
 	if (n == -2147483648 || n == 0)
