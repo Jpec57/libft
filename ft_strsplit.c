@@ -77,6 +77,8 @@ char			**ft_strsplit(char const *s, char c)
 	int		i;
 	int		k;
 
+	if (s == NULL)
+		return (NULL);
 	s_tab = count_word(s, c);
 	if ((res = malloc(sizeof(char*) * (s_tab + 1))) == NULL)
 		return (NULL);

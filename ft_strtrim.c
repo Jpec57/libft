@@ -37,6 +37,8 @@ char	*ft_strtrim(char const *s)
 
 	k = 0;
 	i = 0;
+	if (s == NULL)
+		return (NULL);
 	size = ft_size_str(s);
 	if ((res = malloc(sizeof(char) * (size + 1))) == NULL)
 		return (NULL);
