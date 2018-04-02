@@ -6,7 +6,7 @@
 #    By: mimhoff <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/12 15:14:17 by mimhoff           #+#    #+#              #
-#    Updated: 2018/04/02 14:16:56 by mimhoff          ###   ########.fr        #
+#    Updated: 2018/04/02 19:52:22 by mimhoff          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,7 @@ SRC = ft_memset.c \
 
 all : $(NAME) 
 
-$(NAME) : *.o 
+$(NAME) :
 	gcc -c -Wall -Wextra -Werror $(SRC)
 	ar rc $(NAME) *.o
 	ranlib $(NAME)
